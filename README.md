@@ -1,4 +1,4 @@
-# ios-calendar-ui
+# ios-calendar-demo
 
 |category|Version|
 |---|---|
