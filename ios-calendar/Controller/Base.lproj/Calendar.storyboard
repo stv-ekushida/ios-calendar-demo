@@ -102,6 +102,11 @@
                                             <constraint firstItem="g6b-yJ-KQl" firstAttribute="bottom" secondItem="UOF-tv-we8" secondAttribute="bottomMargin" id="Y7g-9c-kWR"/>
                                             <constraint firstItem="g6b-yJ-KQl" firstAttribute="leading" secondItem="UOF-tv-we8" secondAttribute="leadingMargin" id="nDn-RV-opt"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="dayLabel" destination="g6b-yJ-KQl" id="YOT-18-cx0"/>
                                         </connections>
