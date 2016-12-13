@@ -17,7 +17,13 @@ final class CalendarViewController: UIViewController {
             collectionView.reloadData()
         }
     }
-    var selectedDay = Date()
+    var selectedDay = Date() {
+        didSet {
+            updateViews()
+            updateTitle()
+        }
+    }
+    
     let usecase = CalendarUsecase()
     var dataSource = CalendarCollectionView()
     var cellWidth = CGFloat(0)
@@ -35,14 +41,10 @@ final class CalendarViewController: UIViewController {
     //MARK:- Actions
     @IBAction func didTapPreMonth(_ sender: UIBarButtonItem) {
         selectedDay = selectedDay.preMonth()
-        updateViews()
-        updateTitle()
     }
     
     @IBAction func didTapNextMonth(_ sender: UIBarButtonItem) {
         selectedDay = selectedDay.nextMonth()
-        updateViews()
-        updateTitle()
     }
     
     fileprivate func setupView() {
