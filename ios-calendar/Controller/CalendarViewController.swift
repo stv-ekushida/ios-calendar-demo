@@ -57,7 +57,7 @@ final class CalendarViewController: UIViewController {
         days.removeAll()
         usecase.setup(targetDate: selectedDay)
         
-        for i in 0 ... usecase.numberOfDays()! {
+        for i in 0 ..< usecase.numberOfDays()! {
             days.append(usecase.makeDayText(index: i))
         }
         dataSource.add(days: days)
@@ -92,6 +92,7 @@ extension CalendarViewController: UICollectionViewDelegateFlowLayout {
         
         cellWidth = screenSize.width / CalendarUsecase.daysPerWeek
         cellHeight = (screenSize.height
+            - UIApplication.shared.statusBarFrame.height
             - (self.navigationController?.navigationBar.bounds.height)!
             -  headerViewHeight.constant) / numberOfLines
         
