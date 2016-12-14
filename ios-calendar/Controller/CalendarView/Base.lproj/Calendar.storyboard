@@ -182,7 +182,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qz7-Ap-reh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rgL-9u-fxx"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rgL-9u-fxx">
+                            <connections>
+                                <action selector="didTapAddToDo:" destination="BYZ-38-t0r" id="jgy-At-k5H"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="EUE-te-KtZ" id="Rrr-8v-lWV"/>
