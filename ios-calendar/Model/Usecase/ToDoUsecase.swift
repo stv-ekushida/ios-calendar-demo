@@ -18,7 +18,7 @@ final class ToDoUsecase {
 
     static func addTodo(todo: ToDoEntity) -> Bool{
 
-        let sql = "INSERT INTO todo (targetDate, title) VALUES (?, ?);"
+        let sql = "INSERT INTO todo (targetDate, title, created, id_done) VALUES (?, ?, ?, ?);"
         let db = DBUsecase.build()
         var result = false
 
@@ -27,7 +27,9 @@ final class ToDoUsecase {
 
         do {
             let targetDate = todo.targetDate?.yyyymndd().timeIntervalSince1970 ?? 0
-            try db?.executeUpdate(sql, values: [targetDate, todo.title])
+            let created = Date().yyyymndd().timeIntervalSince1970 ?? 0
+            
+            try db?.executeUpdate(sql, values: [targetDate, todo.title, created, false])
             db?.commit()
             result = true
         } catch{
@@ -40,7 +42,7 @@ final class ToDoUsecase {
 
     static func updateTodo(todo: ToDoEntity) -> Bool {
 
-        let sql = "UPDATE todo SET targetDate = :TARGET_DATE, title = :TITLE WHERE task_id = :ID;"
+        let sql = "UPDATE todo SET targetDate = :TARGET_DATE, title = :TITLE, id_done = :IS_DONE WHERE task_id = :ID;"
         let db = DBUsecase.build()
         var result = false
 
@@ -52,7 +54,8 @@ final class ToDoUsecase {
         let sqlResult = db?.executeUpdate(sql,
                               withParameterDictionary: ["TARGET_DATE": targetDate,
                                                         "TITLE":todo.title,
-                                                        "ID": todo.taskId])
+                                                        "ID": todo.taskId,
+                                                        "IS_DONE": todo.isDone])
         if sqlResult! {
             db?.commit()
             result = true
@@ -66,7 +69,7 @@ final class ToDoUsecase {
 
     static func todoList() -> [ToDoEntity] {
 
-        let sql = "SELECT task_id, targetDate, title FROM todo ORDER BY task_id;"
+        let sql = "SELECT task_id, targetDate, title, is_done FROM todo ORDER BY task_id, created;"
         let db = DBUsecase.build()
         db?.open()
 
@@ -78,11 +81,13 @@ final class ToDoUsecase {
             let taskId = sqlResult?.int(forColumn: "task_id") ?? 0
             let targetDate = sqlResult?.double(forColumn: "targetDate") ?? 0
             let title = sqlResult?.string(forColumn: "title") ?? ""
+            let isDone = sqlResult?.bool(forColumn: "is_done") ?? false
 
             var todo = ToDoEntity()
             todo.taskId = Int(taskId)
             todo.targetDate = Date(timeIntervalSince1970: targetDate)
             todo.title = title
+            todo.isDone = isDone
             todos.append(todo)
         }
 
@@ -92,7 +97,7 @@ final class ToDoUsecase {
 
     static func findTodoAt(yyyymd: String) -> ToDoEntity? {
 
-        let sql = "SELECT task_id, targetDate, title FROM todo WHERE targetDate = :TARGET_DATE;"
+        let sql = "SELECT task_id, targetDate, title, is_done FROM todo WHERE targetDate = :TARGET_DATE;"
         let db = DBUsecase.build()
         db?.open()
 
@@ -106,11 +111,13 @@ final class ToDoUsecase {
             let taskId = sqlResult?.int(forColumn: "task_id") ?? 0
             let targetDate = sqlResult?.double(forColumn: "targetDate") ?? 0
             let title = sqlResult?.string(forColumn: "title") ?? ""
+            let isDone = sqlResult?.bool(forColumn: "is_done") ?? false
 
             var todo = ToDoEntity()
             todo.taskId = Int(taskId)
             todo.targetDate = Date(timeIntervalSince1970: targetDate)
             todo.title = title
+            todo.isDone = isDone
             todos.append(todo)
         }
 

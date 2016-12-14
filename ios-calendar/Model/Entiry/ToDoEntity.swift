@@ -14,6 +14,5 @@ struct ToDoEntity {
     var targetDate: Date?
     var title = ""
     var created = Date()
-    var modifid: Date?
-    var deleteFlg = false
+    var isDone = false
 }

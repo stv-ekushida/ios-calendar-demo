@@ -27,7 +27,7 @@ final class DBUsecase: DBUsecaseable {
 
     static fileprivate func createTable() {
 
-        let sql = "CREATE TABLE IF NOT EXISTS todo (task_id INTEGER PRIMARY KEY, targetDate REAL, title TEXT);"
+        let sql = "CREATE TABLE IF NOT EXISTS todo (task_id INTEGER PRIMARY KEY, targetDate REAL, title TEXT, created REAL, is_done INTEGER);"
 
         db?.open()
         let ret = db?.executeUpdate(sql, withArgumentsIn: nil)
