@@ -10,8 +10,6 @@ import UIKit
 
 protocol DBUsecaseable {
     static func build() -> FMDatabase?
-    static func open()
-    static func close()
 }
 
 final class DBUsecase: DBUsecaseable {
@@ -27,30 +25,23 @@ final class DBUsecase: DBUsecaseable {
         return db
     }
 
-    static func open() {
-        db?.open()
-    }
-
-    static func close() {
-        db?.close()
-    }
-
     static fileprivate func createTable() {
 
-        let sql = "CREATE TABLE IF NOT EXISTS todo (task_id INTEGER PRIMARY KEY, title TEXT);"
+        let sql = "CREATE TABLE IF NOT EXISTS todo (task_id INTEGER PRIMARY KEY, targetDate REAL, title TEXT, content TEXT);"
 
-        open()
+        db?.open()
         let ret = db?.executeUpdate(sql, withArgumentsIn: nil)
         if ret != nil {
             print("CREATE todo Table SUCCESS")
         }
-        close()
+        db?.close()
     }
 
     static fileprivate func path() -> String {
 
         let dbName = "calendar.db"
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)
+        print(paths.first?.appendingPathComponent(dbName) ?? "")
         return paths.first?.appendingPathComponent(dbName) ?? ""
     }
 }

@@ -1,5 +1,5 @@
 //
-//  String.swift
+//  String+Path.swift
 //  ios-calendar
 //
 //  Created by Eiji Kushida on 2016/12/14.
