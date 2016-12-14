@@ -86,16 +86,6 @@ extension CalendarViewController: UICollectionViewDelegateFlowLayout {
         if cellWidth != 0 && cellHeight != 0 {
             return CGSize(width: cellWidth, height: cellHeight)
         }
-        
-        let screenSize = UIScreen.main.bounds
-        let numberOfLines = CGFloat(days.count / Int(CalendarUsecase.daysPerWeek))
-        
-        cellWidth = screenSize.width / CalendarUsecase.daysPerWeek
-        cellHeight = (screenSize.height
-            - UIApplication.shared.statusBarFrame.height
-            - (self.navigationController?.navigationBar.bounds.height)!
-            -  headerViewHeight.constant) / numberOfLines
-        
-        return CGSize(width: cellWidth, height: cellHeight)
+        return CalendarItemCellSize.build(topOf: self)
     }
 }
