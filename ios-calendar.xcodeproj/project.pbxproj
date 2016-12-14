@@ -24,6 +24,8 @@
 		C5324DD01E00E53F006444A0 /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DCF1E00E53F006444A0 /* ToDoEntity.swift */; };
 		C5324DD21E0117F0006444A0 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD11E0117F0006444A0 /* String+Date.swift */; };
 		C5324DD41E011A3C006444A0 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD31E011A3C006444A0 /* Date+String.swift */; };
+		C5324DD61E012346006444A0 /* DBUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD51E012346006444A0 /* DBUsecaseTest.swift */; };
+		C5324DD81E012358006444A0 /* ToDoUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD71E012358006444A0 /* ToDoUsecaseTest.swift */; };
 		C581D9751DFFFED90045FFC9 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581D9741DFFFED90045FFC9 /* CalendarCollectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		C5324DCF1E00E53F006444A0 /* ToDoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
 		C5324DD11E0117F0006444A0 /* String+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		C5324DD31E011A3C006444A0 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		C5324DD51E012346006444A0 /* DBUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUsecaseTest.swift; sourceTree = "<group>"; };
+		C5324DD71E012358006444A0 /* ToDoUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoUsecaseTest.swift; sourceTree = "<group>"; };
 		C581D9741DFFFED90045FFC9 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,8 @@
 			children = (
 				C51A946B1DFFE5F5009C0B87 /* Info.plist */,
 				C51A94691DFFE5F5009C0B87 /* ios_calendarTests.swift */,
+				C5324DD51E012346006444A0 /* DBUsecaseTest.swift */,
+				C5324DD71E012358006444A0 /* ToDoUsecaseTest.swift */,
 			);
 			path = "ios-calendarTests";
 			sourceTree = "<group>";
@@ -372,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C51A946A1DFFE5F5009C0B87 /* ios_calendarTests.swift in Sources */,
+				C5324DD61E012346006444A0 /* DBUsecaseTest.swift in Sources */,
+				C5324DD81E012358006444A0 /* ToDoUsecaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
