@@ -11,20 +11,27 @@ import UIKit
 final class CalendarItemCell: UICollectionViewCell{
 
     @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var canToDoLabel: UILabel!
 
     static var identifier: String {
         get {
             return String(describing: self)
         }
     }
-
-    var day: String? {
-
+    var yyyymd: String? {
         didSet {
 
-            if let day = day {
-                dayLabel.text = day
+            if let yyyymd = yyyymd {
+                self.yyyymd = yyyymd
+                dayLabel.text = yyyymd.components(separatedBy: "-").last
+                dayLabel.textColor = CalendarItemColor.dayColor(index: self.tag)
             }
+        }
+    }
+
+    var canTodo: Bool = false {
+        didSet {
+            canToDoLabel.isHidden = !canTodo
         }
     }
 }

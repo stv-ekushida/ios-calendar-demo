@@ -42,4 +42,12 @@ extension Date {
         comp.hour = 9
         return NSCalendar.current.date(byAdding: comp,to: self)!
     }
+
+    func yyyymndd() -> Date {
+
+        var comp: DateComponents = Calendar.current.dateComponents([.year, .month, .day],
+                                                                   from: Calendar.current.startOfDay(for: self))
+        comp.hour = 9
+        return Calendar.current.date(from: comp)!
+    }
 }

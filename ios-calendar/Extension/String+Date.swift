@@ -10,10 +10,10 @@ import UIKit
 
 extension String {
 
-    func str2Date(dateString: String, format: String) -> Date?{
+    func str2Date(format: String) -> Date?{
 
         let formatter = DateFormatter()
         formatter.dateFormat = format
-        return formatter.date(from: dateString)
+        return formatter.date(from: self)
     }
 }

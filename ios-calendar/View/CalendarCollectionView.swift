@@ -26,7 +26,11 @@ final class CalendarCollectionView: NSObject, UICollectionViewDataSource {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CalendarItemCell.identifier,
                                                       for: indexPath) as! CalendarItemCell
-        cell.day = days[indexPath.row]
+        cell.tag = indexPath.row
+        cell.yyyymd = days[indexPath.row]
+
+        let canTodo = ToDoUsecase.findTodoAt(yyyymd: days[indexPath.row])
+        cell.canTodo = (canTodo != nil)
         return cell
     }
 }
