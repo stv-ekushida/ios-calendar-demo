@@ -31,13 +31,7 @@ final class CalendarItemColor {
 
     static func targetMonthColor(selectedDate: Date, dateString: String) -> UIColor? {
 
-        enum CalendarSeparate: Int {
-            case year
-            case month
-            case day
-        }
-
-        let targetMonth = dateString.components(separatedBy: "-")[CalendarSeparate.month.rawValue]
+        let targetMonth = dateString.str2DateString(separated: .month)
         let selectedMonth = selectedDate.date2String(format: "M")
         
         return targetMonth == selectedMonth ? nil : UIColor.lightGray

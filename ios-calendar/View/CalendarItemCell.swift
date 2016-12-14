@@ -22,7 +22,7 @@ final class CalendarItemCell: UICollectionViewCell{
     var dateString: String = "" {
         didSet {
 
-            dayLabel.text = dateString.components(separatedBy: "-").last
+            dayLabel.text = dateString.str2DateString(separated: .day)
 
             if let color = CalendarItemColor.targetMonthColor(selectedDate: selectedDate!, dateString: dateString) {
                 dayLabel.textColor = color

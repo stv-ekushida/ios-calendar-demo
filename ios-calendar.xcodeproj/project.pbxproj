@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC74AF901E018EBC00D11BA9 /* String+SeparatedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74AF8F1E018EBC00D11BA9 /* String+SeparatedDate.swift */; };
 		C49F3BF67247BFC8A41F95FA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAA8FA2ED5AB536E4F7FCDE /* libPods.a */; };
 		C51A94551DFFE5F5009C0B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A94541DFFE5F5009C0B87 /* AppDelegate.swift */; };
 		C51A94571DFFE5F5009C0B87 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A94561DFFE5F5009C0B87 /* CalendarViewController.swift */; };
@@ -48,6 +49,7 @@
 		1E113E8EF87E630B9F98A8A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AFAAD4182871B853008BB40B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BBAA8FA2ED5AB536E4F7FCDE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC74AF8F1E018EBC00D11BA9 /* String+SeparatedDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SeparatedDate.swift"; sourceTree = "<group>"; };
 		C51A94511DFFE5F5009C0B87 /* ios-calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51A94541DFFE5F5009C0B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C51A94561DFFE5F5009C0B87 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				C5324DD11E0117F0006444A0 /* String+Date.swift */,
 				C5324DC91E00E120006444A0 /* String+Path.swift */,
 				C5324DE31E014128006444A0 /* UIStoryboard+Scene.swift */,
+				BC74AF8F1E018EBC00D11BA9 /* String+SeparatedDate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				C5324DC11E00CAA4006444A0 /* CalendarItemCellSize.swift in Sources */,
 				C5324DCA1E00E120006444A0 /* String+Path.swift in Sources */,
 				C5324DD41E011A3C006444A0 /* Date+String.swift in Sources */,
+				BC74AF901E018EBC00D11BA9 /* String+SeparatedDate.swift in Sources */,
 				C51A94781DFFF031009C0B87 /* Date+Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -574,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
