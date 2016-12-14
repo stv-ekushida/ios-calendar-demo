@@ -10,15 +10,15 @@ import UIKit
 
 final class CalendarCollectionView: NSObject, UICollectionViewDataSource {
 
-    var days: [String] = []
+    var dateStrings: [String] = []
 
-    func add(days: [String]) {
-        self.days = days
+    func add(dateStrings: [String]) {
+        self.dateStrings = dateStrings
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return days.count
+        return dateStrings.count
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -27,10 +27,10 @@ final class CalendarCollectionView: NSObject, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CalendarItemCell.identifier,
                                                       for: indexPath) as! CalendarItemCell
         cell.tag = indexPath.row
-        cell.yyyymd = days[indexPath.row]
+        cell.dateString = dateStrings[indexPath.row]
 
-        let canTodo = ToDoUsecase.findTodoAt(yyyymd: days[indexPath.row])
-        cell.canTodo = (canTodo != nil)
+        let hasTodo = ToDoUsecase.findTodoAt(yyyymd: dateStrings[indexPath.row])
+        cell.hasTodo = (hasTodo != nil)
         return cell
     }
 }

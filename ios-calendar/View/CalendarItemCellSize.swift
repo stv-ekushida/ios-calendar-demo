@@ -13,7 +13,7 @@ final class CalendarItemCellSize {
     static func build(topOf: CalendarViewController) -> CGSize {
 
         let screenSize = UIScreen.main.bounds
-        let numberOfWeekly = CGFloat(topOf.days.count / Int(CalendarUsecase.daysPerWeek))
+        let numberOfWeekly = CGFloat(topOf.dateStrings.count / Int(CalendarUsecase.daysPerWeek))
         let correctionSize = UIApplication.shared.statusBarFrame.height
             + (topOf.navigationController?.navigationBar.bounds.height)!
             + topOf.toolBarViewHeight.constant

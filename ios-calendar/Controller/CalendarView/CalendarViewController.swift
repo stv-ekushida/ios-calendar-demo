@@ -26,7 +26,7 @@ final class CalendarViewController: UIViewController {
     @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var toolBarViewHeight: NSLayoutConstraint!
 
-    var days: [String] = [] {
+    var dateStrings: [String] = [] {
         didSet {
             collectionView.reloadData()
         }
@@ -70,13 +70,13 @@ final class CalendarViewController: UIViewController {
     
     fileprivate func updateViews() {
         
-        days.removeAll()
+        dateStrings.removeAll()
         usecase.setup(targetDate: selectedDay)
         
         for i in 0 ..< usecase.numberOfDays()! {
-            days.append(usecase.makeDayText(index: i))
+            dateStrings.append(usecase.makeDayText(index: i))
         }
-        dataSource.add(days: days)
+        dataSource.add(dateStrings: dateStrings)
     }
         
     fileprivate func updateTitle() {
