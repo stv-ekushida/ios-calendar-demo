@@ -77,6 +77,7 @@ final class CalendarViewController: UIViewController {
             dateStrings.append(usecase.makeDayText(index: i))
         }
         dataSource.add(dateStrings: dateStrings)
+        dataSource.selectedDate = selectedDay
     }
         
     fileprivate func updateTitle() {

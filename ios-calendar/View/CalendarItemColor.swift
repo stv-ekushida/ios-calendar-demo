@@ -12,12 +12,34 @@ final class CalendarItemColor {
 
     static func dayColor(index: Int) -> UIColor{
 
-        if index % 7 == 0 {
+        enum Week: Int {
+            case sun
+            case sat = 6
+        }
+
+        switch index % Int(CalendarUsecase.daysPerWeek) {
+        case Week.sun.rawValue:
             return UIColor.red
-        } else if index % 7 == 6 {
+
+        case Week.sat.rawValue:
             return UIColor.blue
-        } else {
+
+        default:
             return UIColor.black
         }
+    }
+
+    static func targetMonthColor(selectedDate: Date, dateString: String) -> UIColor? {
+
+        enum CalendarSeparate: Int {
+            case year
+            case month
+            case day
+        }
+
+        let targetMonth = dateString.components(separatedBy: "-")[CalendarSeparate.month.rawValue]
+        let selectedMonth = selectedDate.date2String(format: "M")
+        
+        return targetMonth == selectedMonth ? nil : UIColor.lightGray
     }
 }
