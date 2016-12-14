@@ -18,20 +18,20 @@ final class CalendarItemCell: UICollectionViewCell{
             return String(describing: self)
         }
     }
-    var yyyymd: String? {
+    var dateString: String? {
         didSet {
 
-            if let yyyymd = yyyymd {
-                self.yyyymd = yyyymd
-                dayLabel.text = yyyymd.components(separatedBy: "-").last
+            if let dateString = dateString {
+                self.dateString = dateString
+                dayLabel.text = dateString.components(separatedBy: "-").last
                 dayLabel.textColor = CalendarItemColor.dayColor(index: self.tag)
             }
         }
     }
 
-    var canTodo: Bool = false {
+    var hasTodo: Bool = false {
         didSet {
-            canToDoLabel.isHidden = !canTodo
+            canToDoLabel.isHidden = !hasTodo
         }
     }
 }
