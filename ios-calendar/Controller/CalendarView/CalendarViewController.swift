@@ -44,12 +44,15 @@ final class CalendarViewController: UIViewController {
     //MARK:-LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupView()        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         updateViews()
         updateTitle()
     }
-
+    
     //MARK:- Actions
     @IBAction func didTapPreMonth(_ sender: UIBarButtonItem) {
         selectedDay = selectedDay.preMonth()
@@ -57,10 +60,6 @@ final class CalendarViewController: UIViewController {
     
     @IBAction func didTapNextMonth(_ sender: UIBarButtonItem) {
         selectedDay = selectedDay.nextMonth()
-    }
-
-    @IBAction func didTapAddToDo(_ sender: UIBarButtonItem) {
-        presnetAddToDoViewController()
     }
 
     fileprivate func setupView() {
@@ -84,19 +83,21 @@ final class CalendarViewController: UIViewController {
         self.title = usecase.date2String(date: selectedDay, format: "Y年M月")
     }
 
-    fileprivate func presnetAddToDoViewController() {
-
-        let vc = UIStoryboard.getViewController(storyboardName: AddToDoViewController.storyboardName,
-                                                identifier: AddToDoViewController.identifier) as! AddToDoViewController
-        self.present(vc, animated: true, completion:  nil)
-    }
 }
 
 //MARK:- UICollectionViewDelegate
 extension CalendarViewController: UICollectionViewDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {        
+        presnetAddToDoViewController(dateString: dateStrings[indexPath.row])
+    }
+    
+    fileprivate func presnetAddToDoViewController(dateString: String) {
+        
+        let vc = UIStoryboard.getViewController(storyboardName: AddToDoViewController.storyboardName,
+                                                identifier: AddToDoViewController.identifier) as! AddToDoViewController
+        vc.dateString = dateString
+        self.present(vc, animated: true, completion:  nil)
     }
 }
 

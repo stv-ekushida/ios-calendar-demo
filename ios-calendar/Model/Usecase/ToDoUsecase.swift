@@ -18,7 +18,7 @@ final class ToDoUsecase {
 
     static func addTodo(todo: ToDoEntity) -> Bool{
 
-        let sql = "INSERT INTO todo (targetDate, title, created, id_done) VALUES (?, ?, ?, ?);"
+        let sql = "INSERT INTO todo (targetDate, title, created, is_done) VALUES (?, ?, ?, ?);"
         let db = DBUsecase.build()
         var result = false
 
@@ -27,7 +27,7 @@ final class ToDoUsecase {
 
         do {
             let targetDate = todo.targetDate?.yyyymndd().timeIntervalSince1970 ?? 0
-            let created = Date().yyyymndd().timeIntervalSince1970 ?? 0
+            let created = Date().yyyymndd().timeIntervalSince1970 
             
             try db?.executeUpdate(sql, values: [targetDate, todo.title, created, false])
             db?.commit()
