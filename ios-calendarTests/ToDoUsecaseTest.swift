@@ -114,8 +114,7 @@ class ToDoUsecaseTest: XCTestCase {
         var todo = ToDoEntity()
         todo.title = title
         todo.content = content
-        todo.targetDate = dateString.str2Date(dateString: dateString,
-                                              format: "yyyy-MM-dd HH:mm:ss Z")
+        todo.targetDate = dateString.str2Date(format: "yyyy-MM-dd HH:mm:ss Z")
         return todo
     }
 }

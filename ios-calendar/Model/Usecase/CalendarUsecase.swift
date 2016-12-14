@@ -67,7 +67,8 @@ final class CalendarUsecase: Calendarable {
         
         if let date = NSCalendar.current.date(byAdding: comp,
                                               to: startOfDay) {
-            return date2String(date: date, format: "d")
+
+            return date2String(date: date, format: "yyyy-M-d")
         } else {
             fatalError("\(#function) : 日付が取得できませんでした")
         }

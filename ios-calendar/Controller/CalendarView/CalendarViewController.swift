@@ -12,6 +12,8 @@ final class CalendarViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var toolBarViewHeight: NSLayoutConstraint!
+
     var days: [String] = [] {
         didSet {
             collectionView.reloadData()
@@ -26,8 +28,6 @@ final class CalendarViewController: UIViewController {
     
     let usecase = CalendarUsecase()
     var dataSource = CalendarCollectionView()
-    var cellWidth = CGFloat(0)
-    var cellHeight = CGFloat(0)
 
     //MARK:-LifeCycle
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ final class CalendarViewController: UIViewController {
         updateViews()
         updateTitle()
     }
-    
+
     //MARK:- Actions
     @IBAction func didTapPreMonth(_ sender: UIBarButtonItem) {
         selectedDay = selectedDay.preMonth()
@@ -83,9 +83,6 @@ extension CalendarViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        if cellWidth != 0 && cellHeight != 0 {
-            return CGSize(width: cellWidth, height: cellHeight)
-        }
         return CalendarItemCellSize.build(topOf: self)
     }
 }

@@ -26,7 +26,8 @@ final class ToDoUsecase {
         db?.beginTransaction()
 
         do {
-            try db?.executeUpdate(sql, values: [todo.targetDate!, todo.title, todo.content])
+            let targetDate = todo.targetDate?.yyyymndd().timeIntervalSince1970 ?? 0
+            try db?.executeUpdate(sql, values: [targetDate, todo.title, todo.content])
             db?.commit()
             result = true
         } catch{
@@ -46,14 +47,14 @@ final class ToDoUsecase {
         db?.open()
         db?.beginTransaction()
 
-        let targetDate = todo.targetDate?.timeIntervalSince1970 ?? 0
+        let targetDate = todo.targetDate?.yyyymndd().timeIntervalSince1970 ?? 0
 
-        let result2 = db?.executeUpdate(sql,
+        let sqlResult = db?.executeUpdate(sql,
                               withParameterDictionary: ["TARGET_DATE": targetDate,
                                                         "TITLE":todo.title,
                                                         "CONTENT" : todo.content,
                                                         "ID": todo.taskId])
-        if result2! {
+        if sqlResult! {
             db?.commit()
             result = true
         } else {
@@ -70,15 +71,15 @@ final class ToDoUsecase {
         let db = DBUsecase.build()
         db?.open()
 
-        let results = db?.executeQuery(sql, withArgumentsIn: nil)
+        let sqlResult = db?.executeQuery(sql, withArgumentsIn: nil)
         var todos: [ToDoEntity] = []
 
-        while (results?.next())! {
+        while (sqlResult?.next())! {
 
-            let taskId = results?.int(forColumn: "task_id") ?? 0
-            let targetDate = results?.double(forColumn: "targetDate") ?? 0
-            let title = results?.string(forColumn: "title") ?? ""
-            let content = results?.string(forColumn: "content") ?? ""
+            let taskId = sqlResult?.int(forColumn: "task_id") ?? 0
+            let targetDate = sqlResult?.double(forColumn: "targetDate") ?? 0
+            let title = sqlResult?.string(forColumn: "title") ?? ""
+            let content = sqlResult?.string(forColumn: "content") ?? ""
 
             var todo = ToDoEntity()
             todo.taskId = Int(taskId)
@@ -91,6 +92,41 @@ final class ToDoUsecase {
         db?.close()
         return todos
     }
+
+    static func findTodoAt(yyyymd: String) -> ToDoEntity? {
+
+        let sql = "SELECT task_id, targetDate, title, content FROM todo WHERE targetDate = :TARGET_DATE;"
+        let db = DBUsecase.build()
+        db?.open()
+
+        let targetDateUnixTime = yyyymd.str2Date(format: "yyyy-MM-dd")?.yyyymndd().timeIntervalSince1970 ?? 0
+        let sqlResult = db?.executeQuery(sql, withParameterDictionary: ["TARGET_DATE": targetDateUnixTime])
+
+        var todos: [ToDoEntity] = []
+
+        while (sqlResult?.next())! {
+
+            let taskId = sqlResult?.int(forColumn: "task_id") ?? 0
+            let targetDate = sqlResult?.double(forColumn: "targetDate") ?? 0
+            let title = sqlResult?.string(forColumn: "title") ?? ""
+            let content = sqlResult?.string(forColumn: "content") ?? ""
+
+            var todo = ToDoEntity()
+            todo.taskId = Int(taskId)
+            todo.targetDate = Date(timeIntervalSince1970: targetDate)
+            todo.title = title
+            todo.content = content
+            todos.append(todo)
+        }
+
+        db?.close()
+
+        guard todos.count != 0 else {
+            return nil
+        }
+        return todos.first
+    }
+
 
     static func deleteToDoAll() {
 
