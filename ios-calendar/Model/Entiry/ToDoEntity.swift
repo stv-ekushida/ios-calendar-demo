@@ -13,7 +13,6 @@ struct ToDoEntity {
     var taskId = 0
     var targetDate: Date?
     var title = ""
-    var content = ""
     var created = Date()
     var modifid: Date?
     var deleteFlg = false
