@@ -10,6 +10,18 @@ import UIKit
 
 final class CalendarViewController: UIViewController {
 
+    static var storyboardName: String {
+        get {
+            return String(describing: self)
+        }
+    }
+
+    static var identifier: String {
+        get {
+            return String(describing: self)
+        }
+    }
+
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var toolBarViewHeight: NSLayoutConstraint!
@@ -46,7 +58,11 @@ final class CalendarViewController: UIViewController {
     @IBAction func didTapNextMonth(_ sender: UIBarButtonItem) {
         selectedDay = selectedDay.nextMonth()
     }
-    
+
+    @IBAction func didTapAddToDo(_ sender: UIBarButtonItem) {
+        presnetAddToDoViewController()
+    }
+
     fileprivate func setupView() {
         collectionView.dataSource = dataSource
         collectionView.delegate = self
@@ -65,6 +81,13 @@ final class CalendarViewController: UIViewController {
         
     fileprivate func updateTitle() {
         self.title = usecase.date2String(date: selectedDay, format: "Y年M月")
+    }
+
+    fileprivate func presnetAddToDoViewController() {
+
+        let vc = UIStoryboard.getViewController(storyboardName: AddToDoViewController.storyboardName,
+                                                identifier: AddToDoViewController.identifier) as! AddToDoViewController
+        self.present(vc, animated: true, completion:  nil)
     }
 }
 
@@ -86,3 +109,5 @@ extension CalendarViewController: UICollectionViewDelegateFlowLayout {
         return CalendarItemCellSize.build(topOf: self)
     }
 }
+
+extension CalendarViewController: Storyboardable {}
