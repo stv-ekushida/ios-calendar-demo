@@ -18,12 +18,15 @@ final class CalendarItemCell: UICollectionViewCell{
             return String(describing: self)
         }
     }
-    var dateString: String? {
+    var selectedDate: Date?
+    var dateString: String = "" {
         didSet {
 
-            if let dateString = dateString {
-                self.dateString = dateString
-                dayLabel.text = dateString.components(separatedBy: "-").last
+            dayLabel.text = dateString.components(separatedBy: "-").last
+
+            if let color = CalendarItemColor.targetMonthColor(selectedDate: selectedDate!, dateString: dateString) {
+                dayLabel.textColor = color
+            } else {
                 dayLabel.textColor = CalendarItemColor.dayColor(index: self.tag)
             }
         }

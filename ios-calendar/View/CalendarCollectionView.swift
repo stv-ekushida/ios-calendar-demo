@@ -11,6 +11,7 @@ import UIKit
 final class CalendarCollectionView: NSObject, UICollectionViewDataSource {
 
     var dateStrings: [String] = []
+    var selectedDate: Date?
 
     func add(dateStrings: [String]) {
         self.dateStrings = dateStrings
@@ -27,6 +28,7 @@ final class CalendarCollectionView: NSObject, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CalendarItemCell.identifier,
                                                       for: indexPath) as! CalendarItemCell
         cell.tag = indexPath.row
+        cell.selectedDate = selectedDate
         cell.dateString = dateStrings[indexPath.row]
 
         let hasTodo = ToDoUsecase.findTodoAt(yyyymd: dateStrings[indexPath.row])
