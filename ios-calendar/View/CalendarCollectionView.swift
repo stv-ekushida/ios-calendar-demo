@@ -31,8 +31,8 @@ final class CalendarCollectionView: NSObject, UICollectionViewDataSource {
         cell.selectedDate = selectedDate
         cell.dateString = dateStrings[indexPath.row]
 
-        let hasTodo = ToDoUsecase.findTodoAt(yyyymd: dateStrings[indexPath.row])
-        cell.hasTodo = (hasTodo != nil)
+        let todos = ToDoUsecase.findTodoAt(yyyymd: dateStrings[indexPath.row])
+        cell.hasTodo = todos.count > 0
         return cell
     }
 }

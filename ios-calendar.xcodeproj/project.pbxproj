@@ -1,1560 +1,697 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01F272BAA209930DC1ADDFFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1E113E8EF87E630B9F98A8A7</string>
-				<string>AFAAD4182871B853008BB40B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E113E8EF87E630B9F98A8A7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>318D5A9B0C9009B426B629A3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>34F89D34A34E0CD4337FC568</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BBAA8FA2ED5AB536E4F7FCDE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>919F569ADEC42DAF7C01F1F4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AFAAD4182871B853008BB40B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BBAA8FA2ED5AB536E4F7FCDE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BC2B80231E001D8000E65FF6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C5324DDD1E013BBC006444A0</string>
-				<string>C522C78A1E0152B10075E008</string>
-				<string>C5324DDE1E013BC9006444A0</string>
-				<string>C5324DDF1E013F8C006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC2B80241E001D8D00E65FF6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A945B1DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Resource</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC74AF8F1E018EBC00D11BA9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>String+SeparatedDate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC74AF901E018EBC00D11BA9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC74AF8F1E018EBC00D11BA9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C49F3BF67247BFC8A41F95FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BBAA8FA2ED5AB536E4F7FCDE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A94481DFFE5F5009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>34F89D34A34E0CD4337FC568</string>
-				<string>01F272BAA209930DC1ADDFFE</string>
-				<string>C51A94521DFFE5F5009C0B87</string>
-				<string>C51A94531DFFE5F5009C0B87</string>
-				<string>C51A94681DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94491DFFE5F5009C0B87</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0810</string>
-				<key>LastUpgradeCheck</key>
-				<string>0810</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Eiji Kushida</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>C51A94501DFFE5F5009C0B87</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.1</string>
-						<key>DevelopmentTeam</key>
-						<string>PCCZJUYRT6</string>
-						<key>LastSwiftMigration</key>
-						<string>0810</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>C51A94641DFFE5F5009C0B87</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.1</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>C51A94501DFFE5F5009C0B87</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>C51A944C1DFFE5F5009C0B87</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>C51A94481DFFE5F5009C0B87</string>
-			<key>productRefGroup</key>
-			<string>C51A94521DFFE5F5009C0B87</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>C51A94501DFFE5F5009C0B87</string>
-				<string>C51A94641DFFE5F5009C0B87</string>
-			</array>
-		</dict>
-		<key>C51A944C1DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C51A946C1DFFE5F5009C0B87</string>
-				<string>C51A946D1DFFE5F5009C0B87</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C51A944D1DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C51A947C1DFFFD4B009C0B87</string>
-				<string>C522C7891E0151E50075E008</string>
-				<string>C5324DCE1E00E516006444A0</string>
-				<string>C5324DDA1E0139AD006444A0</string>
-				<string>C5324DE41E014128006444A0</string>
-				<string>C51A94571DFFE5F5009C0B87</string>
-				<string>C5324DD01E00E53F006444A0</string>
-				<string>C5324DD21E0117F0006444A0</string>
-				<string>C51A94751DFFE60E009C0B87</string>
-				<string>C5324DE21E0140A8006444A0</string>
-				<string>C5324DCC1E00E129006444A0</string>
-				<string>C51A94551DFFE5F5009C0B87</string>
-				<string>C581D9751DFFFED90045FFC9</string>
-				<string>C5324DC11E00CAA4006444A0</string>
-				<string>C5324DCA1E00E120006444A0</string>
-				<string>C5324DD41E011A3C006444A0</string>
-				<string>BC74AF901E018EBC00D11BA9</string>
-				<string>C51A94781DFFF031009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C51A944E1DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C49F3BF67247BFC8A41F95FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C51A944F1DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C51A945F1DFFE5F5009C0B87</string>
-				<string>C51A945C1DFFE5F5009C0B87</string>
-				<string>C5324DE61E014FCB006444A0</string>
-				<string>C51A945A1DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C51A94501DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C51A946E1DFFE5F5009C0B87</string>
-			<key>buildPhases</key>
-			<array>
-				<string>318D5A9B0C9009B426B629A3</string>
-				<string>C51A944D1DFFE5F5009C0B87</string>
-				<string>C51A944E1DFFE5F5009C0B87</string>
-				<string>C51A944F1DFFE5F5009C0B87</string>
-				<string>919F569ADEC42DAF7C01F1F4</string>
-				<string>F26B8E63A421661E214709F1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ios-calendar</string>
-			<key>productName</key>
-			<string>ios-calendar</string>
-			<key>productReference</key>
-			<string>C51A94511DFFE5F5009C0B87</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>C51A94511DFFE5F5009C0B87</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>ios-calendar.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C51A94521DFFE5F5009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A94511DFFE5F5009C0B87</string>
-				<string>C51A94651DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94531DFFE5F5009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BC2B80231E001D8000E65FF6</string>
-				<string>C51A94761DFFF024009C0B87</string>
-				<string>C51A94791DFFF1DE009C0B87</string>
-				<string>BC2B80241E001D8D00E65FF6</string>
-				<string>C51A947A1DFFFD23009C0B87</string>
-				<string>C51A94541DFFE5F5009C0B87</string>
-				<string>C51A94601DFFE5F5009C0B87</string>
-				<string>C5324DC21E00D4D3006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ios-calendar</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94541DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94551DFFE5F5009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A94541DFFE5F5009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A94561DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CalendarViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94571DFFE5F5009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A94561DFFE5F5009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A94581DFFE5F5009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A94591DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Calendar.storyboard</string>
-			<key>path</key>
-			<string>.</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94591DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Calendar.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A945A1DFFE5F5009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A94581DFFE5F5009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A945B1DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A945C1DFFE5F5009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A945B1DFFE5F5009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A945D1DFFE5F5009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A945E1DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>path</key>
-			<string>.</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A945E1DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A945F1DFFE5F5009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A945D1DFFE5F5009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A94601DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94611DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C51A946A1DFFE5F5009C0B87</string>
-				<string>C5324DD61E012346006444A0</string>
-				<string>C5324DD81E012358006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C51A94621DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C51A94631DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C51A94641DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C51A94711DFFE5F5009C0B87</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C51A94611DFFE5F5009C0B87</string>
-				<string>C51A94621DFFE5F5009C0B87</string>
-				<string>C51A94631DFFE5F5009C0B87</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C51A94671DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ios-calendarTests</string>
-			<key>productName</key>
-			<string>ios-calendarTests</string>
-			<key>productReference</key>
-			<string>C51A94651DFFE5F5009C0B87</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>C51A94651DFFE5F5009C0B87</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>ios-calendarTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C51A94661DFFE5F5009C0B87</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>C51A94491DFFE5F5009C0B87</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C51A94501DFFE5F5009C0B87</string>
-			<key>remoteInfo</key>
-			<string>ios-calendar</string>
-		</dict>
-		<key>C51A94671DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>C51A94501DFFE5F5009C0B87</string>
-			<key>targetProxy</key>
-			<string>C51A94661DFFE5F5009C0B87</string>
-		</dict>
-		<key>C51A94681DFFE5F5009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C5324DD51E012346006444A0</string>
-				<string>C51A946B1DFFE5F5009C0B87</string>
-				<string>C5324DD71E012358006444A0</string>
-				<string>C51A94691DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ios-calendarTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94691DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ios_calendarTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A946A1DFFE5F5009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A94691DFFE5F5009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A946B1DFFE5F5009C0B87</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A946C1DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C51A946D1DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C51A946E1DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C51A946F1DFFE5F5009C0B87</string>
-				<string>C51A94701DFFE5F5009C0B87</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C51A946F1DFFE5F5009C0B87</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1E113E8EF87E630B9F98A8A7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>PCCZJUYRT6</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ios-calendar/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>jp.st-ventures.ios-calendar</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>ios-calendar/ios-calendar-Bridging-Header.h</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C51A94701DFFE5F5009C0B87</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AFAAD4182871B853008BB40B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>PCCZJUYRT6</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ios-calendar/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>jp.st-ventures.ios-calendar</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>ios-calendar/ios-calendar-Bridging-Header.h</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C51A94711DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C51A94721DFFE5F5009C0B87</string>
-				<string>C51A94731DFFE5F5009C0B87</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C51A94721DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ios-calendarTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>jp.st-ventures.ios-calendarTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/ios-calendar.app/ios-calendar</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C51A94731DFFE5F5009C0B87</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ios-calendarTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>jp.st-ventures.ios-calendarTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/ios-calendar.app/ios-calendar</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C51A94741DFFE60E009C0B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CalendarUsecase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94751DFFE60E009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A94741DFFE60E009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A94761DFFF024009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A94771DFFF031009C0B87</string>
-				<string>C5324DD31E011A3C006444A0</string>
-				<string>C5324DD11E0117F0006444A0</string>
-				<string>C5324DC91E00E120006444A0</string>
-				<string>BC74AF8F1E018EBC00D11BA9</string>
-				<string>C5324DE31E014128006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Extension</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94771DFFF031009C0B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Date+Calendar.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A94781DFFF031009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A94771DFFF031009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C51A94791DFFF1DE009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C5324DDC1E013B83006444A0</string>
-				<string>C5324DDB1E013B69006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A947A1DFFFD23009C0B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C581D9741DFFFED90045FFC9</string>
-				<string>C51A947B1DFFFD4B009C0B87</string>
-				<string>C5324DC01E00CAA4006444A0</string>
-				<string>C5324DD91E0139AD006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A947B1DFFFD4B009C0B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CalendarItemCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C51A947C1DFFFD4B009C0B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51A947B1DFFFD4B009C0B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C522C7881E0151E50075E008</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Storyboardable.swift</string>
-			<key>path</key>
-			<string>Storyboardable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C522C7891E0151E50075E008</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C522C7881E0151E50075E008</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C522C78A1E0152B10075E008</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C522C7881E0151E50075E008</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Common</string>
-			<key>path</key>
-			<string>Common</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DC01E00CAA4006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CalendarItemCellSize.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DC11E00CAA4006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DC01E00CAA4006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DC21E00D4D3006444A0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ios-calendar-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DC91E00E120006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>String+Path.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DCA1E00E120006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DC91E00E120006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DCB1E00E129006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DBUsecase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DCC1E00E129006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DCB1E00E129006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DCD1E00E516006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ToDoUsecase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DCE1E00E516006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DCD1E00E516006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DCF1E00E53F006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ToDoEntity.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DD01E00E53F006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DCF1E00E53F006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DD11E0117F0006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>String+Date.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DD21E0117F0006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DD11E0117F0006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DD31E011A3C006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Date+String.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DD41E011A3C006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DD31E011A3C006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DD51E012346006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DBUsecaseTest.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DD61E012346006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DD51E012346006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DD71E012358006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ToDoUsecaseTest.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DD81E012358006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DD71E012358006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DD91E0139AD006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CalendarItemColor.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DDA1E0139AD006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DD91E0139AD006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DDB1E013B69006444A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A94741DFFE60E009C0B87</string>
-				<string>C5324DCB1E00E129006444A0</string>
-				<string>C5324DCD1E00E516006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Usecase</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DDC1E013B83006444A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C5324DCF1E00E53F006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Entiry</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DDD1E013BBC006444A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A94581DFFE5F5009C0B87</string>
-				<string>C51A94561DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CalendarView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DDE1E013BC9006444A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51A945D1DFFE5F5009C0B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>StartUp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DDF1E013F8C006444A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C5324DE51E014FCB006444A0</string>
-				<string>C5324DE11E0140A8006444A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ToDo</string>
-			<key>path</key>
-			<string>ToDo</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DE11E0140A8006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ToDoViewController.swift</string>
-			<key>path</key>
-			<string>ToDoViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DE21E0140A8006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DE11E0140A8006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DE31E014128006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIStoryboard+Scene.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DE41E014128006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DE31E014128006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5324DE51E014FCB006444A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>ToDoViewController.storyboard</string>
-			<key>path</key>
-			<string>ToDoViewController.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5324DE61E014FCB006444A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5324DE51E014FCB006444A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C581D9741DFFFED90045FFC9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CalendarCollectionView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C581D9751DFFFED90045FFC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C581D9741DFFFED90045FFC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F26B8E63A421661E214709F1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>C51A94491DFFE5F5009C0B87</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC74AF901E018EBC00D11BA9 /* String+SeparatedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74AF8F1E018EBC00D11BA9 /* String+SeparatedDate.swift */; };
+		C49F3BF67247BFC8A41F95FA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAA8FA2ED5AB536E4F7FCDE /* libPods.a */; };
+		C51A94551DFFE5F5009C0B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A94541DFFE5F5009C0B87 /* AppDelegate.swift */; };
+		C51A94571DFFE5F5009C0B87 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A94561DFFE5F5009C0B87 /* CalendarViewController.swift */; };
+		C51A945A1DFFE5F5009C0B87 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51A94581DFFE5F5009C0B87 /* Calendar.storyboard */; };
+		C51A945C1DFFE5F5009C0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51A945B1DFFE5F5009C0B87 /* Assets.xcassets */; };
+		C51A945F1DFFE5F5009C0B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51A945D1DFFE5F5009C0B87 /* LaunchScreen.storyboard */; };
+		C51A946A1DFFE5F5009C0B87 /* ios_calendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A94691DFFE5F5009C0B87 /* ios_calendarTests.swift */; };
+		C51A94751DFFE60E009C0B87 /* CalendarUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A94741DFFE60E009C0B87 /* CalendarUsecase.swift */; };
+		C51A94781DFFF031009C0B87 /* Date+Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A94771DFFF031009C0B87 /* Date+Calendar.swift */; };
+		C51A947C1DFFFD4B009C0B87 /* CalendarItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A947B1DFFFD4B009C0B87 /* CalendarItemCell.swift */; };
+		C522C7891E0151E50075E008 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522C7881E0151E50075E008 /* Storyboardable.swift */; };
+		C5324DC11E00CAA4006444A0 /* CalendarItemCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DC01E00CAA4006444A0 /* CalendarItemCellSize.swift */; };
+		C5324DCA1E00E120006444A0 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DC91E00E120006444A0 /* String+Path.swift */; };
+		C5324DCC1E00E129006444A0 /* DBUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DCB1E00E129006444A0 /* DBUsecase.swift */; };
+		C5324DCE1E00E516006444A0 /* ToDoUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DCD1E00E516006444A0 /* ToDoUsecase.swift */; };
+		C5324DD01E00E53F006444A0 /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DCF1E00E53F006444A0 /* ToDoEntity.swift */; };
+		C5324DD21E0117F0006444A0 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD11E0117F0006444A0 /* String+Date.swift */; };
+		C5324DD41E011A3C006444A0 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD31E011A3C006444A0 /* Date+String.swift */; };
+		C5324DD61E012346006444A0 /* DBUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD51E012346006444A0 /* DBUsecaseTest.swift */; };
+		C5324DD81E012358006444A0 /* ToDoUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD71E012358006444A0 /* ToDoUsecaseTest.swift */; };
+		C5324DDA1E0139AD006444A0 /* CalendarItemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DD91E0139AD006444A0 /* CalendarItemColor.swift */; };
+		C5324DE21E0140A8006444A0 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DE11E0140A8006444A0 /* ToDoViewController.swift */; };
+		C5324DE41E014128006444A0 /* UIStoryboard+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5324DE31E014128006444A0 /* UIStoryboard+Scene.swift */; };
+		C5324DE61E014FCB006444A0 /* ToDoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5324DE51E014FCB006444A0 /* ToDoViewController.storyboard */; };
+		C581D9751DFFFED90045FFC9 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581D9741DFFFED90045FFC9 /* CalendarCollectionView.swift */; };
+		C5E527811E026C3A00BE94C1 /* ToDoListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E527801E026C3A00BE94C1 /* ToDoListTableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C51A94661DFFE5F5009C0B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C51A94491DFFE5F5009C0B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C51A94501DFFE5F5009C0B87;
+			remoteInfo = "ios-calendar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E113E8EF87E630B9F98A8A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AFAAD4182871B853008BB40B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BBAA8FA2ED5AB536E4F7FCDE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC74AF8F1E018EBC00D11BA9 /* String+SeparatedDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SeparatedDate.swift"; sourceTree = "<group>"; };
+		C51A94511DFFE5F5009C0B87 /* ios-calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51A94541DFFE5F5009C0B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C51A94561DFFE5F5009C0B87 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		C51A94591DFFE5F5009C0B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Calendar.storyboard; sourceTree = "<group>"; };
+		C51A945B1DFFE5F5009C0B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C51A945E1DFFE5F5009C0B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C51A94601DFFE5F5009C0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C51A94651DFFE5F5009C0B87 /* ios-calendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-calendarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51A94691DFFE5F5009C0B87 /* ios_calendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_calendarTests.swift; sourceTree = "<group>"; };
+		C51A946B1DFFE5F5009C0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C51A94741DFFE60E009C0B87 /* CalendarUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarUsecase.swift; sourceTree = "<group>"; };
+		C51A94771DFFF031009C0B87 /* Date+Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Calendar.swift"; sourceTree = "<group>"; };
+		C51A947B1DFFFD4B009C0B87 /* CalendarItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarItemCell.swift; sourceTree = "<group>"; };
+		C522C7881E0151E50075E008 /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		C5324DC01E00CAA4006444A0 /* CalendarItemCellSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarItemCellSize.swift; sourceTree = "<group>"; };
+		C5324DC21E00D4D3006444A0 /* ios-calendar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-calendar-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5324DC91E00E120006444A0 /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
+		C5324DCB1E00E129006444A0 /* DBUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUsecase.swift; sourceTree = "<group>"; };
+		C5324DCD1E00E516006444A0 /* ToDoUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoUsecase.swift; sourceTree = "<group>"; };
+		C5324DCF1E00E53F006444A0 /* ToDoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
+		C5324DD11E0117F0006444A0 /* String+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		C5324DD31E011A3C006444A0 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		C5324DD51E012346006444A0 /* DBUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUsecaseTest.swift; sourceTree = "<group>"; };
+		C5324DD71E012358006444A0 /* ToDoUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoUsecaseTest.swift; sourceTree = "<group>"; };
+		C5324DD91E0139AD006444A0 /* CalendarItemColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarItemColor.swift; sourceTree = "<group>"; };
+		C5324DE11E0140A8006444A0 /* ToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		C5324DE31E014128006444A0 /* UIStoryboard+Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Scene.swift"; sourceTree = "<group>"; };
+		C5324DE51E014FCB006444A0 /* ToDoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ToDoViewController.storyboard; sourceTree = "<group>"; };
+		C581D9741DFFFED90045FFC9 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
+		C5E527801E026C3A00BE94C1 /* ToDoListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoListTableView.swift; path = ToDo/ToDoListTableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C51A944E1DFFE5F5009C0B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49F3BF67247BFC8A41F95FA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51A94621DFFE5F5009C0B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F272BAA209930DC1ADDFFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E113E8EF87E630B9F98A8A7 /* Pods.debug.xcconfig */,
+				AFAAD4182871B853008BB40B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34F89D34A34E0CD4337FC568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAA8FA2ED5AB536E4F7FCDE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC2B80231E001D8000E65FF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5324DDD1E013BBC006444A0 /* CalendarView */,
+				C522C78A1E0152B10075E008 /* Common */,
+				C5324DDE1E013BC9006444A0 /* StartUp */,
+				C5324DDF1E013F8C006444A0 /* ToDo */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC2B80241E001D8D00E65FF6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C51A945B1DFFE5F5009C0B87 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C51A94481DFFE5F5009C0B87 = {
+			isa = PBXGroup;
+			children = (
+				34F89D34A34E0CD4337FC568 /* Frameworks */,
+				01F272BAA209930DC1ADDFFE /* Pods */,
+				C51A94521DFFE5F5009C0B87 /* Products */,
+				C51A94531DFFE5F5009C0B87 /* ios-calendar */,
+				C51A94681DFFE5F5009C0B87 /* ios-calendarTests */,
+			);
+			sourceTree = "<group>";
+		};
+		C51A94521DFFE5F5009C0B87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C51A94511DFFE5F5009C0B87 /* ios-calendar.app */,
+				C51A94651DFFE5F5009C0B87 /* ios-calendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C51A94531DFFE5F5009C0B87 /* ios-calendar */ = {
+			isa = PBXGroup;
+			children = (
+				BC2B80231E001D8000E65FF6 /* Controller */,
+				C51A94761DFFF024009C0B87 /* Extension */,
+				C51A94791DFFF1DE009C0B87 /* Model */,
+				BC2B80241E001D8D00E65FF6 /* Resource */,
+				C51A947A1DFFFD23009C0B87 /* View */,
+				C51A94541DFFE5F5009C0B87 /* AppDelegate.swift */,
+				C51A94601DFFE5F5009C0B87 /* Info.plist */,
+				C5324DC21E00D4D3006444A0 /* ios-calendar-Bridging-Header.h */,
+			);
+			path = "ios-calendar";
+			sourceTree = "<group>";
+		};
+		C51A94681DFFE5F5009C0B87 /* ios-calendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5324DD51E012346006444A0 /* DBUsecaseTest.swift */,
+				C51A946B1DFFE5F5009C0B87 /* Info.plist */,
+				C5324DD71E012358006444A0 /* ToDoUsecaseTest.swift */,
+				C51A94691DFFE5F5009C0B87 /* ios_calendarTests.swift */,
+			);
+			path = "ios-calendarTests";
+			sourceTree = "<group>";
+		};
+		C51A94761DFFF024009C0B87 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C51A94771DFFF031009C0B87 /* Date+Calendar.swift */,
+				C5324DD31E011A3C006444A0 /* Date+String.swift */,
+				C5324DD11E0117F0006444A0 /* String+Date.swift */,
+				C5324DC91E00E120006444A0 /* String+Path.swift */,
+				BC74AF8F1E018EBC00D11BA9 /* String+SeparatedDate.swift */,
+				C5324DE31E014128006444A0 /* UIStoryboard+Scene.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C51A94791DFFF1DE009C0B87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5324DDC1E013B83006444A0 /* Entiry */,
+				C5324DDB1E013B69006444A0 /* Usecase */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C51A947A1DFFFD23009C0B87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5E5277E1E026BF600BE94C1 /* Calendar */,
+				C5E5277F1E026C0200BE94C1 /* ToDo */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C522C78A1E0152B10075E008 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C522C7881E0151E50075E008 /* Storyboardable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C5324DDB1E013B69006444A0 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				C51A94741DFFE60E009C0B87 /* CalendarUsecase.swift */,
+				C5324DCB1E00E129006444A0 /* DBUsecase.swift */,
+				C5324DCD1E00E516006444A0 /* ToDoUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		C5324DDC1E013B83006444A0 /* Entiry */ = {
+			isa = PBXGroup;
+			children = (
+				C5324DCF1E00E53F006444A0 /* ToDoEntity.swift */,
+			);
+			path = Entiry;
+			sourceTree = "<group>";
+		};
+		C5324DDD1E013BBC006444A0 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				C51A94581DFFE5F5009C0B87 /* Calendar.storyboard */,
+				C51A94561DFFE5F5009C0B87 /* CalendarViewController.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		C5324DDE1E013BC9006444A0 /* StartUp */ = {
+			isa = PBXGroup;
+			children = (
+				C51A945D1DFFE5F5009C0B87 /* LaunchScreen.storyboard */,
+			);
+			path = StartUp;
+			sourceTree = "<group>";
+		};
+		C5324DDF1E013F8C006444A0 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				C5324DE51E014FCB006444A0 /* ToDoViewController.storyboard */,
+				C5324DE11E0140A8006444A0 /* ToDoViewController.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		C5E5277E1E026BF600BE94C1 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				C581D9741DFFFED90045FFC9 /* CalendarCollectionView.swift */,
+				C51A947B1DFFFD4B009C0B87 /* CalendarItemCell.swift */,
+				C5324DC01E00CAA4006444A0 /* CalendarItemCellSize.swift */,
+				C5324DD91E0139AD006444A0 /* CalendarItemColor.swift */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		C5E5277F1E026C0200BE94C1 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				C5E527801E026C3A00BE94C1 /* ToDoListTableView.swift */,
+			);
+			name = ToDo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C51A94501DFFE5F5009C0B87 /* ios-calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C51A946E1DFFE5F5009C0B87 /* Build configuration list for PBXNativeTarget "ios-calendar" */;
+			buildPhases = (
+				318D5A9B0C9009B426B629A3 /* Check Pods Manifest.lock */,
+				C51A944D1DFFE5F5009C0B87 /* Sources */,
+				C51A944E1DFFE5F5009C0B87 /* Frameworks */,
+				C51A944F1DFFE5F5009C0B87 /* Resources */,
+				919F569ADEC42DAF7C01F1F4 /* Embed Pods Frameworks */,
+				F26B8E63A421661E214709F1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-calendar";
+			productName = "ios-calendar";
+			productReference = C51A94511DFFE5F5009C0B87 /* ios-calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C51A94641DFFE5F5009C0B87 /* ios-calendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C51A94711DFFE5F5009C0B87 /* Build configuration list for PBXNativeTarget "ios-calendarTests" */;
+			buildPhases = (
+				C51A94611DFFE5F5009C0B87 /* Sources */,
+				C51A94621DFFE5F5009C0B87 /* Frameworks */,
+				C51A94631DFFE5F5009C0B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C51A94671DFFE5F5009C0B87 /* PBXTargetDependency */,
+			);
+			name = "ios-calendarTests";
+			productName = "ios-calendarTests";
+			productReference = C51A94651DFFE5F5009C0B87 /* ios-calendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C51A94491DFFE5F5009C0B87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Eiji Kushida";
+				TargetAttributes = {
+					C51A94501DFFE5F5009C0B87 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PCCZJUYRT6;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					C51A94641DFFE5F5009C0B87 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C51A94501DFFE5F5009C0B87;
+					};
+				};
+			};
+			buildConfigurationList = C51A944C1DFFE5F5009C0B87 /* Build configuration list for PBXProject "ios-calendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C51A94481DFFE5F5009C0B87;
+			productRefGroup = C51A94521DFFE5F5009C0B87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C51A94501DFFE5F5009C0B87 /* ios-calendar */,
+				C51A94641DFFE5F5009C0B87 /* ios-calendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C51A944F1DFFE5F5009C0B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51A945F1DFFE5F5009C0B87 /* LaunchScreen.storyboard in Resources */,
+				C51A945C1DFFE5F5009C0B87 /* Assets.xcassets in Resources */,
+				C5324DE61E014FCB006444A0 /* ToDoViewController.storyboard in Resources */,
+				C51A945A1DFFE5F5009C0B87 /* Calendar.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51A94631DFFE5F5009C0B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		318D5A9B0C9009B426B629A3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		919F569ADEC42DAF7C01F1F4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26B8E63A421661E214709F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C51A944D1DFFE5F5009C0B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51A947C1DFFFD4B009C0B87 /* CalendarItemCell.swift in Sources */,
+				C522C7891E0151E50075E008 /* Storyboardable.swift in Sources */,
+				C5324DCE1E00E516006444A0 /* ToDoUsecase.swift in Sources */,
+				C5324DDA1E0139AD006444A0 /* CalendarItemColor.swift in Sources */,
+				C5324DE41E014128006444A0 /* UIStoryboard+Scene.swift in Sources */,
+				C51A94571DFFE5F5009C0B87 /* CalendarViewController.swift in Sources */,
+				C5324DD01E00E53F006444A0 /* ToDoEntity.swift in Sources */,
+				C5324DD21E0117F0006444A0 /* String+Date.swift in Sources */,
+				C51A94751DFFE60E009C0B87 /* CalendarUsecase.swift in Sources */,
+				C5324DE21E0140A8006444A0 /* ToDoViewController.swift in Sources */,
+				C5E527811E026C3A00BE94C1 /* ToDoListTableView.swift in Sources */,
+				C5324DCC1E00E129006444A0 /* DBUsecase.swift in Sources */,
+				C51A94551DFFE5F5009C0B87 /* AppDelegate.swift in Sources */,
+				C581D9751DFFFED90045FFC9 /* CalendarCollectionView.swift in Sources */,
+				C5324DC11E00CAA4006444A0 /* CalendarItemCellSize.swift in Sources */,
+				C5324DCA1E00E120006444A0 /* String+Path.swift in Sources */,
+				C5324DD41E011A3C006444A0 /* Date+String.swift in Sources */,
+				BC74AF901E018EBC00D11BA9 /* String+SeparatedDate.swift in Sources */,
+				C51A94781DFFF031009C0B87 /* Date+Calendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51A94611DFFE5F5009C0B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51A946A1DFFE5F5009C0B87 /* ios_calendarTests.swift in Sources */,
+				C5324DD61E012346006444A0 /* DBUsecaseTest.swift in Sources */,
+				C5324DD81E012358006444A0 /* ToDoUsecaseTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C51A94671DFFE5F5009C0B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C51A94501DFFE5F5009C0B87 /* ios-calendar */;
+			targetProxy = C51A94661DFFE5F5009C0B87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C51A94581DFFE5F5009C0B87 /* Calendar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C51A94591DFFE5F5009C0B87 /* Base */,
+			);
+			name = Calendar.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		C51A945D1DFFE5F5009C0B87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C51A945E1DFFE5F5009C0B87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C51A946C1DFFE5F5009C0B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C51A946D1DFFE5F5009C0B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C51A946F1DFFE5F5009C0B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E113E8EF87E630B9F98A8A7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				INFOPLIST_FILE = "ios-calendar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-calendar/ios-calendar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C51A94701DFFE5F5009C0B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFAAD4182871B853008BB40B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				INFOPLIST_FILE = "ios-calendar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-calendar/ios-calendar-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C51A94721DFFE5F5009C0B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ios-calendarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-calendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-calendar.app/ios-calendar";
+			};
+			name = Debug;
+		};
+		C51A94731DFFE5F5009C0B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ios-calendarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-calendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-calendar.app/ios-calendar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C51A944C1DFFE5F5009C0B87 /* Build configuration list for PBXProject "ios-calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51A946C1DFFE5F5009C0B87 /* Debug */,
+				C51A946D1DFFE5F5009C0B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C51A946E1DFFE5F5009C0B87 /* Build configuration list for PBXNativeTarget "ios-calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51A946F1DFFE5F5009C0B87 /* Debug */,
+				C51A94701DFFE5F5009C0B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C51A94711DFFE5F5009C0B87 /* Build configuration list for PBXNativeTarget "ios-calendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51A94721DFFE5F5009C0B87 /* Debug */,
+				C51A94731DFFE5F5009C0B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C51A94491DFFE5F5009C0B87 /* Project object */;
+}

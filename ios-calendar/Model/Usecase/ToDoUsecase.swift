@@ -42,7 +42,7 @@ final class ToDoUsecase {
 
     static func updateTodo(todo: ToDoEntity) -> Bool {
 
-        let sql = "UPDATE todo SET targetDate = :TARGET_DATE, title = :TITLE, id_done = :IS_DONE WHERE task_id = :ID;"
+        let sql = "UPDATE todo SET targetDate = :TARGET_DATE, title = :TITLE, is_done = :IS_DONE WHERE task_id = :ID;"
         let db = DBUsecase.build()
         var result = false
 
@@ -95,7 +95,7 @@ final class ToDoUsecase {
         return todos
     }
 
-    static func findTodoAt(yyyymd: String) -> ToDoEntity? {
+    static func findTodoAt(yyyymd: String) -> [ToDoEntity] {
 
         let sql = "SELECT task_id, targetDate, title, is_done FROM todo WHERE targetDate = :TARGET_DATE;"
         let db = DBUsecase.build()
@@ -123,10 +123,7 @@ final class ToDoUsecase {
 
         db?.close()
 
-        guard todos.count != 0 else {
-            return nil
-        }
-        return todos.first
+        return todos
     }
 
 
