@@ -1,5 +1,5 @@
 //
-//  AddToDoViewController.swift
+//  ToDoViewController.swift
 //  ios-calendar
 //
 //  Created by Eiji Kushida on 2016/12/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class AddToDoViewController: UIViewController {
+final class ToDoViewController: UIViewController {
 
     @IBOutlet weak var navigationBar: UINavigationBar!
     static var storyboardName: String {
@@ -64,4 +64,4 @@ final class AddToDoViewController: UIViewController {
     }
 }
 
-extension AddToDoViewController: Storyboardable {}
+extension ToDoViewController: Storyboardable {}

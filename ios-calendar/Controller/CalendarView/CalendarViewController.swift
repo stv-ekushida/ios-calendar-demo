@@ -89,13 +89,13 @@ final class CalendarViewController: UIViewController {
 extension CalendarViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {        
-        presnetAddToDoViewController(dateString: dateStrings[indexPath.row])
+        presnetToDoViewController(dateString: dateStrings[indexPath.row])
     }
     
-    fileprivate func presnetAddToDoViewController(dateString: String) {
+    fileprivate func presnetToDoViewController(dateString: String) {
         
-        let vc = UIStoryboard.getViewController(storyboardName: AddToDoViewController.storyboardName,
-                                                identifier: AddToDoViewController.identifier) as! AddToDoViewController
+        let vc = UIStoryboard.getViewController(storyboardName: ToDoViewController.storyboardName,
+                                                identifier: ToDoViewController.identifier) as! ToDoViewController
         vc.dateString = dateString
         self.present(vc, animated: true, completion:  nil)
     }
