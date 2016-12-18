@@ -12,9 +12,11 @@ protocol ToDoDao {
     static func addTodo(todo: ToDoEntity) -> Bool
     static func updateTodo(todo: ToDoEntity) -> Bool
     static func todoList() -> [ToDoEntity]
+    static func findTodoAt(yyyymd: String) -> ToDoEntity?
+    static func deleteToDoAll()
 }
 
-final class ToDoUsecase {
+final class ToDoUsecase: ToDoDao {
 
     static func addTodo(todo: ToDoEntity) -> Bool{
 
